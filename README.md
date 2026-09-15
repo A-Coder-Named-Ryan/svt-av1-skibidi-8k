@@ -203,7 +203,7 @@ Enables a more accurate loop filter that prevents blocking, for a modest increas
 
 - `Even higher-quality presets for 8K and 16K`
 
-Lowers the minimum available preset from 5 to 0 for higher-quality 8K and 16K encoding (64 GB of RAM recommended per encoding instance).
+Lowers the minimum available preset from 5 to 0 for higher-quality 8K and 16K encoding (More then 64 GB of RAM recommended per encoding instance).
 
 - `--luminance-qp-bias` *0 to 100* (**[Merged to Mainline](https://gitlab.com/AOMediaCodec/SVT-AV1/-/merge_requests/2348)**)
 
