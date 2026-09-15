@@ -741,7 +741,7 @@ EbErrorType svt_av1_verify_settings(SequenceControlSet* scs) {
         return_error = EB_ErrorBadParameter;
     }
     // Block the use of M-1 or lower for resolutions higher than 4K, unless allintra coding is used (due to memory constraints)
-     if (!scs->allintra && (uint64_t)(scs->max_input_luma_width * scs->max_input_luma_height) > INPUT_SIZE_4K_TH &&
+    if (!scs->allintra && (uint64_t)(scs->max_input_luma_width * scs->max_input_luma_height) > INPUT_SIZE_4K_TH &&
         config->enc_mode <= ENC_M4) {
         if (config->enc_mode >= ENC_M2) {
             SVT_WARN(
