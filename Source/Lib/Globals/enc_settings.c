@@ -747,13 +747,13 @@ EbErrorType svt_av1_verify_settings(SequenceControlSet* scs) {
             SVT_WARN(
                 "8K+ resolution support below M5 isn't officially supported. 64 GB of available memory is "
                 "recommended.\n");
-        } else if (config->enc_mode >= ENC_M0) {
+        } else if (config->enc_mode >= ENC_M-1) {
             SVT_WARN(
                 "8K+ resolution support below M2 is experimental. More then 64 GB of available memory is "
 				"recommended.\n");
         } else {
             // M-1 (Research) and below
-            SVT_ERROR("8K+ resolution support is limited to M2 and faster presets.\n");
+            SVT_ERROR("8K+ resolution support is limited to M-1 and faster presets.\n");
             return_error = EB_ErrorBadParameter;
         }
     }
